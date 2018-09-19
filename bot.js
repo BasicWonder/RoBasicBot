@@ -2,13 +2,21 @@ const discord = require("discord.js");
 const yourbot = new discord.Client();
 const prefix = "!"
 const version = "1.0.7"
+const profanities = require('profanities')
 yourbot.on("ready",()=>{
         console.log("Bot is online");
 })
 
 yourbot.on("message",(message)=>{
    if(!message.content.startsWith(prefix)) return;
-
+        if (message.content.toUpperCase() == profanities[x].toUpperCase()) {
+          if (message.member.roles.has.name('Swearing Perms.')) {
+              message.reply("Wow. :o")
+          } else {
+              message.channel.sendMessage(message.author + ', you must have Swearing Perms. To swear.')
+              message.delete
+            }
+    }
    if(message.content.startsWith(prefix + "hi")){
         message.reply("Hello!");
    }
