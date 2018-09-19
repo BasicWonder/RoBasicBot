@@ -9,7 +9,6 @@ yourbot.on("ready",()=>{
 
 yourbot.on("message",(message)=>{
    if(!message.content.startsWith(prefix)) return;
-    for (x = 0; x < profanities.length; x++) {
         if (message.content.toUpperCase() == profanities[x].toUpperCase()) {
           if (message.member.roles.has.name.sub('Swearing Perms.')) {
               message.reply("Wow. :o")
@@ -17,8 +16,6 @@ yourbot.on("message",(message)=>{
               message.channel.sendMessage(message.author + ', you must have Swearing Perms. To swear.')
               message.delete
             }
-
-        }
     }
    if(message.content.startsWith(prefix + "hi")){
         message.reply("Hello!");
