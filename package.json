@@ -1,0 +1,21 @@
+{
+  "name": "RoBasic",
+  "version": "1.0.8",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "discord.io": "^2.5.3",
+    "discord.js": "^11.3.2",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "node."
+  },
+  "author": "BasicWonder",
+  "license": "ISC"
+}
